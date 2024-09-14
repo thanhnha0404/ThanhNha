@@ -1,11 +1,3 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : Sep 14, 2024, 8:52:59 AM
-    Author     : MyPC
-*/
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -14,9 +6,82 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sidebar (Aside) Styles */
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #333; /* Dark background for the sidebar */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px grey;
+}
+
+aside h1, aside h2 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+aside h1 {
+    font-size: 1.6em;
+    color: #ffffff; /* White text for the sidebar title */
+}
+
+aside h2 {
+    font-size: 1em;
+    color: #cccccc; /* Lighter text for the subtitle */
+}
+
+aside nav {
+    margin-top: 20px;
+}
+
+aside nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Full width of the sidebar */
+}
+
+aside nav ul li {
+    width: 100%; /* Ensure each item takes the full width */
+}
+
+aside nav ul li a {
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    background-color: #4CAF50; /* Green for each link block */
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+aside nav ul li a:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Main Content Styles */
+.content-container {
+    margin-left: 240px; /* Add margin to avoid overlap with the fixed sidebar */
     padding: 20px;
 }
 
@@ -31,7 +96,7 @@ h1, h2 {
     margin: 0;
 }
 
-.about, .skills, .contact {
+.about, .exercise, .contact {
     background-color: white;
     margin: 20px 0;
     padding: 20px;
@@ -65,4 +130,14 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Exercise Section Styles */
+.exercise h2 {
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
 
+.exercise ul li {
+    background: #e0f7fa;
+    margin: 5px 0;
+    padding: 10px;
+}
