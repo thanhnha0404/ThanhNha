@@ -97,6 +97,7 @@ h1, h2 {
 }
 
 .about, .exercise, .contact {
+    font-family: Arial;
     background-color: white;
     margin: 20px 0;
     padding: 20px;
